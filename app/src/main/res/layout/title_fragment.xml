@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#ff0000"
+     >
+<ImageView
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/login_image"/>
+    <TextView
+        android:id="@+id/bejing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="北京顺义通"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:layout_centerVertical="true"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_back_normal"
+        android:layout_toRightOf="@id/bejing"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="-5dp"/>
+
+    <ImageView
+        android:id="@+id/title_addLink"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/add_link_page"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/zingerweima"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/release"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mall_ball"
+        android:layout_toLeftOf="@id/title_addLink"
+        android:layout_marginRight="-13dp"
+
+        />
+</RelativeLayout>

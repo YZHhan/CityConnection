@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.han.cityconnection.MainActivity">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:name="com.han.cityconnection.view.fragment.TitleFragent"/>
+    <FrameLayout
+        android:id="@+id/contentGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleFragment"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_toutiaoBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_toutiao"
+            android:text="头条"
+            android:gravity="center_horizontal"
+              />
+
+        <RadioButton
+            android:id="@+id/main_shequBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_shequ"
+            android:text="社区"
+            android:gravity="center_horizontal"
+            />
+
+        <RadioButton
+            android:id="@+id/main_zhaopinBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_zhaopin"
+            android:text="招聘"
+            android:gravity="center_horizontal"
+            />
+
+        <RadioButton
+            android:id="@+id/main_fangchanBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_fangchan"
+            android:text="房产"
+            android:gravity="center_horizontal"
+            />
+
+        <RadioButton
+            android:id="@+id/main_foundBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_found"
+            android:text="发现"
+            android:gravity="center_horizontal"
+            />
+    </RadioGroup>
+</LinearLayout>
