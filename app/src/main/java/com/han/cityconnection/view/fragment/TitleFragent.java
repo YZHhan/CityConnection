@@ -19,6 +19,11 @@ public class TitleFragent extends BaseFragment {
     }
 
     @Override
+    protected void sendQuest() {
+
+    }
+
+    @Override
     protected void initView(View view) {
 
     }

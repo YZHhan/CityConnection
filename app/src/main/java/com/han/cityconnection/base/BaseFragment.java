@@ -1,6 +1,8 @@
 package com.han.cityconnection.base;
 
+import android.app.Dialog;
 import android.app.FragmentManager;
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -9,13 +11,16 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.han.cityconnection.App;
+import com.han.cityconnection.R;
 
 /**
  * Created by Administrator on 2017/5/8.
  */
 
 public abstract class BaseFragment extends Fragment {
+    private Dialog loadDialog;
 
+    protected ProgressDialog progressDialog;
     protected Bundle bundle;
 
     @Nullable
@@ -31,6 +36,7 @@ public abstract class BaseFragment extends Fragment {
         initView(view);
         initListener();
         initData();
+        sendQuest();
     }
 
     /**
@@ -39,6 +45,7 @@ public abstract class BaseFragment extends Fragment {
      */
     protected abstract int getLayoutId();
 
+    protected abstract void sendQuest();
     /**
      * 初始化View控件
      */
@@ -75,6 +82,20 @@ public abstract class BaseFragment extends Fragment {
         String simpleName = App.lastFragment.getClass().getSimpleName();
         updateTitleBar();
     };
+
+    public void showProgress() {
+        loadDialog=new Dialog(getContext(), R.style.dialog);
+        loadDialog.setContentView(R.layout.layout_dialog);
+        loadDialog.show();
+
+    }
+
+    public void diaProgress(){
+        if (loadDialog != null && loadDialog.isShowing()==true) {
+            loadDialog.dismiss();
+            loadDialog=null;
+        }
+    }
 
     /**
      * 当Fragment不可见时

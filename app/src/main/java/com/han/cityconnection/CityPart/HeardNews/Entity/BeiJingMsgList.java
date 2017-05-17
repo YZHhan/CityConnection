@@ -1,4 +1,4 @@
-package com.han.cityconnection.model.entity;
+package com.han.cityconnection.CityPart.HeardNews.Entity;
 
 import java.util.List;
 
