@@ -41,31 +41,7 @@ public class TouTiaoFragment extends BaseFragment {
             imageView.setImageResource(imageID[i]);
             list.add(imageView);
         }
-
-
-
         viewPager = (ViewPager) view.findViewById(R.id.main_ViewPager);
-//        ImageView imageView1 = new ImageView(App.activity);
-//        imageView1.setImageResource(R.drawable.my_main_advice1);
-//        ViewGroup.LayoutParams layoutParams = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 1000);
-//        imageView1.setLayoutParams(layoutParams);
-//        imageView1.setScaleType(ImageView.ScaleType.FIT_XY);
-//        list.add(imageView1);
-//        ImageView imageView2 = new ImageView(App.activity);
-//        imageView2.setLayoutParams(layoutParams);
-//        imageView2.setScaleType(ImageView.ScaleType.FIT_XY);
-//        imageView2.setImageResource(R.drawable.my_main_advice2);
-//        list.add(imageView2);
-//        ImageView imageView3 = new ImageView(App.activity);
-//        imageView3.setLayoutParams(layoutParams);
-//        imageView3.setImageResource(R.drawable.my_main_advice3);
-//        imageView3.setScaleType(ImageView.ScaleType.FIT_XY);
-//        list.add(imageView3);
-//        ImageView imageView4 = new ImageView(App.activity);
-//        imageView4.setLayoutParams(layoutParams);
-//        imageView4.setImageResource(R.drawable.my_main_advice4);
-//        imageView4.setScaleType(ImageView.ScaleType.FIT_XY);
-//        list.add(imageView4);
         viewPagerBanner = new ViewPagerBanner(list);
         viewPager.setAdapter(viewPagerBanner);
     }

@@ -17,7 +17,6 @@ public class Parameter {
     // 首页下载接口字符串
 
     public static String createnewsParam(String method, JSONObject params) {
-//        String time = Tools.dateFormat(new Date().getTime());
         JSONObject pp = new JSONObject();
         try {
             pp.put("customerID", Urls.CUSTOMER_ID);

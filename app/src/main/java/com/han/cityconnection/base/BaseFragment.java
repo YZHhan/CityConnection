@@ -31,6 +31,7 @@ public abstract class BaseFragment extends Fragment {
         initView(view);
         initListener();
         initData();
+        loadData();
     }
 
     /**
