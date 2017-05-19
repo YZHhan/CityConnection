@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".CityPart.HeardNews.LogResPart.activity.DuanxinLogin"/>
-        <activity android:name=".CityPart.HeardNews.LogResPart.activity.FindPasswrad"/>
+        <activity android:name=".CityPart.HeardNews.LogResPart.activity.FindPasswrad" />
         <activity android:name=".CityPart.HeardNews.LogResPart.activity.QuickRegister"/>
         <activity android:name=".CityPart.HeardNews.LogResPart.activity.SetPassword"/>
         <activity android:name=".CityPart.HeardNews.LogResPart.activity.MainActivity">
