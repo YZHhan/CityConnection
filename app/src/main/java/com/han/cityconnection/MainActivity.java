@@ -38,6 +38,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         fangchanButton = (RadioButton) findViewById(R.id.main_fangchanBtn);
         foundButton = (RadioButton) findViewById(R.id.main_foundBtn);
 
+
     }
 
     @Override

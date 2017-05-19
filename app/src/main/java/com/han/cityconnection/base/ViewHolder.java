@@ -15,7 +15,7 @@ import java.util.Map;
  * Created by Administrator on 2017/5/8.
  */
 
-public class ViewHolder {
+public class ViewHolder  {
 
     private static ViewHolder holder = null;
 
@@ -23,7 +23,7 @@ public class ViewHolder {
     private Context context;
     private View convertView;
 
-    private ViewHolder(Context context, View convertView){
+    public ViewHolder(Context context, View convertView){
         this.context = context;
         this.convertView = convertView;
         this.views = new HashMap<>();

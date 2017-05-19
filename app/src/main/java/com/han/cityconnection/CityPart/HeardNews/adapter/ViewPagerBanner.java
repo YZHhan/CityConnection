@@ -23,7 +23,8 @@ public class ViewPagerBanner extends PagerAdapter {
         if (list.size() == 0) {
             return 1;
         }
-        return Integer.MAX_VALUE;
+            return Integer.MAX_VALUE;
+
     }
 
     @Override
@@ -42,9 +43,9 @@ public class ViewPagerBanner extends PagerAdapter {
         return imageView;
     }
 
-//    @Override
-//    public void destroyItem(ViewGroup container, int position, Object object) {
-////        super.destroyItem(container, position, object);
-//    }
+  @Override
+  public void destroyItem(ViewGroup container, int position, Object object) {
+//       super.destroyItem(container, position, object);
+   }
 
 }

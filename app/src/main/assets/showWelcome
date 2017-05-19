@@ -1,0 +1,166 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <title>微封面</title>
+    <link rel="stylesheet" type="text/css" href="http://img.pccoo.cn/wap/css2/fengmian.css" />
+    <script src="http://img.pccoo.cn/wap/js2/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://img.pccoo.cn/wap/js2/slip.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    //JavaScript方法，弹出对话框显示信息
+    //调用绑定的Java对象的方法，即调用Android代码显示对话框
+    function showAndroidToast(toast)
+    {
+        myInterfaceName.showToast(toast);//注意此处的myInterfaceName要和外部传入的名字一致，大小写正确
+    }
+</script>
+</head>
+<body>
+    <!-- 开发环境380*675 -->
+    <div class="preload" id="preload">
+        <p id="progress">
+            0%</p>
+        <div id="progressbar">
+            <div class="bar" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="pages" id="page1">
+            <div class="down">
+                <img src="http://img.pccoo.cn/wap/images/onepage/img1.png" /></div>
+            <div class="string">
+                <img src="http://img.pccoo.cn/wap/images/onepage/string.png" /></div>
+            <div class="rel">
+                <div class="bubble left">
+                    <i class="tail"></i>你想成为万人关注的<b>STAR</b>吗？</div>
+                <div class="bubble right">
+                    <i class="tail"></i>你想体验成为<b>偶像</b>的感觉吗？</div>
+            </div>
+            <p class="p18">
+                《微封面》给你展现自我的平台！</p>
+            <a href="javascript:;" class="tip"><i class="spec-arrow"><em></em></i>上划查看更多</a>
+        </div>
+        <div class="pages" id="page2">
+            <p>
+                拍照片发布到<i class="arrow-down"></i><strong>《封面秀》</strong></p>
+            <div class="box">
+                <div class="down">
+                    <img src="http://img.pccoo.cn/wap/images/onepage/img2.png" alt=""></div>
+                <div class="slide">
+                    <img src="http://img.pccoo.cn/wap/images/onepage/img3.png" alt=""></div>
+                <div class="flash">
+                    <img src="http://img.pccoo.cn/wap/images/onepage/flash.png" alt=""></div>
+                <div class="stars">
+                    <span>
+                        <img src="http://img.pccoo.cn/wap/images/onepage/star.png" alt=""></span> <span>
+                            <img src="http://img.pccoo.cn/wap/images/onepage/star.png" alt=""></span>
+                    <span>
+                        <img src="http://img.pccoo.cn/wap/images/onepage/star.png" alt=""></span> <span>
+                            <img src="http://img.pccoo.cn/wap/images/onepage/star.png" alt=""></span>
+                </div>
+            </div>
+            <p class="p18">
+                美美哒^_^</p>
+            <a href="javascript:;" class="tip"><i class="spec-arrow"><em></em></i>上划查看更多 </a>
+        </div>
+        <div class="pages" id="page3">
+            <p>
+                发送给你的好友<br>
+                为你回贴点赞<i class="arrow-down"></i></p>
+            <div class="box">
+                <div class="c" id="a">
+                    <div class="down">
+                        <img src="http://img.pccoo.cn/wap/images/onepage/img4.png" /></div>
+                </div>
+                <div class="bubble right">
+                    加油，么么哒！<i class="tail1"></i></div>
+                <div class="bubble left">
+                    赞一下<i class="tail1"></i></div>
+            </div>
+            <p class="p18">
+                要告诉好友哟！</p>
+            <a href="javascript:;" class="tip"><i class="spec-arrow"><em></em></i>上划查看更多 </a>
+        </div>
+        <div class="pages" id="page4">
+            <p>
+                封面秀人气较高的将有机会<br />
+                被选为封面人物<i class="arrow-down"></i></p>
+            <div class="box">
+                <div class="c">
+                    <div class="down">
+                        <img src="http://img.pccoo.cn/wap/images/onepage/img5.png" alt=""></div>
+                    <div class="slide">
+                        <img src="http://img.pccoo.cn/wap/images/onepage/img6.png" alt=""></div>
+                </div>
+            </div>
+            <small>万人瞩目呦^_^亲！</small> <a id="make" onClick="showAndroidToast('Hello Android!')" class="btn">制作封面</a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+			resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			recalc = function () {
+			    var clientHeight = docEl.clientHeight;
+			    if (!clientHeight) return;
+			    docEl.style.fontSize = 16 * (clientHeight / 675) + 'px';
+			    if (document.getElementById('a').offsetWidth && (document.getElementById('a').offsetWidth + docEl.clientWidth) % 2 != 0) {
+			        document.getElementById('a').style.width = document.getElementById('a').offsetWidth + 1 + 'px'
+			    }
+			};
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window)
+        $(document).ready(function () {
+            $('.pages').height(window.innerHeight)
+            // onepage/
+            Slip($('.container')[0], 'y').end(function () {
+                $(this.elPages[this.page]).addClass('active').siblings().removeClass('active')
+            }).webapp();
+
+        })
+        var bar = $('#progressbar .bar'), pro = $('#progress');
+        bar.width(0)
+        var image = $('img'), index = 0;
+        image.each(function () {
+            if (this.complete) {
+                index++;
+                if (index == image.length) {
+                    setTimeout(function () {
+                        document.getElementById('preload').style.display = 'none';
+                        $('#page1').addClass('active')
+                    }, 500)
+                }
+                pro.html((index / image.length * 100).toFixed(0) + '%')
+                bar.width((index / image.length * 100).toFixed(0) + '%')
+            } else {
+                this.onload = function () {
+                    index++;
+                    if (index == image.length) {
+                        setTimeout(function () {
+                            document.getElementById('preload').style.display = 'none'
+                            $('#page1').addClass('active')
+                        }, 500)
+                    }
+                    pro.html((index / image.length * 100).toFixed(0) + '%')
+                    bar.width((index / image.length * 100).toFixed(0) + '%')
+                }
+            }
+        })
+    </script>
+   
+<div style="display:none;"><script src="http://s25.cnzz.com/stat.php?id=4599213&web_id=4599213" language="JavaScript"></script>
+<script type="text/javascript" src="http://www.tn.ccoo.cn/mystat.asp?siteid=920&type=m"></script>
+<script src="http://s9.cnzz.com/stat.php?id=3834609&web_id=3834609" language="JavaScript"></script>
+</div>
+</body>
+</html>
