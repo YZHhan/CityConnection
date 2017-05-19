@@ -81,8 +81,6 @@ public class TouTiaoFragment extends BaseFragment implements HeaderNewContract.H
         headerParsenter = new HeaderParsenterImpl(this);
         headListView = (ListView) view.findViewById(R.id.header_listView);
         headListView.addHeaderView(view1);
-
-
 //
 //        datas = new ArrayList<>();
 //        recyclerView = (PullToRefreshRecyclerView) view.findViewById(R.id.header_recyclerView);

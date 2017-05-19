@@ -8,6 +8,9 @@
     <color name="blue">#0099ff</color>
     <color name="transparent">#00000000</color> <!-- 透明 -->
 
+
+
+
     <!--最新添加-->
     <color name="color_333">#333333</color>
     <color name="color_ccc">#cccccc</color>
@@ -16,4 +19,7 @@
     <color name="color_666">#666666</color>
     <color name="gray_bg">#F0F0F0</color>
     <color name="red_text">#E03016</color>
+    <color name="login_edit_text">#ff4200</color>
+    <color name="login_edit_line">#ff9900</color>
+    <color name="login_edit_hint">#f1866f</color>
 </resources>

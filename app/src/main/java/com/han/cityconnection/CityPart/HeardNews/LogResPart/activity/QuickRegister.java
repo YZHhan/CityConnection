@@ -11,14 +11,12 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.han.cityconnection.CityPart.HeardNews.LogResPart.Contract.Contract;
 import com.han.cityconnection.CityPart.HeardNews.LogResPart.bean.ResBean;
 import com.han.cityconnection.CityPart.HeardNews.LogResPart.bean.UserInfoBean;
 import com.han.cityconnection.CityPart.HeardNews.LogResPart.bean.UserLogbean;
 import com.han.cityconnection.CityPart.HeardNews.LogResPart.bean.UsergetCodebean;
 import com.han.cityconnection.CityPart.HeardNews.LogResPart.entity.LogResPesnterImp;
-import com.han.cityconnection.R;
 import com.han.cityconnection.config.Parameter;
 import com.han.cityconnection.config.Urls;
 

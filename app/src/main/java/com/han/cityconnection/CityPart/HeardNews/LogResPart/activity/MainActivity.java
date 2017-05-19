@@ -1,31 +1,20 @@
 package com.han.cityconnection.CityPart.HeardNews.LogResPart.activity;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.han.cityconnection.App;
 import com.han.cityconnection.CityPart.HeardNews.LogResPart.Contract.Contract;
 import com.han.cityconnection.CityPart.HeardNews.LogResPart.bean.ResBean;
 import com.han.cityconnection.CityPart.HeardNews.LogResPart.bean.UserInfoBean;
 import com.han.cityconnection.CityPart.HeardNews.LogResPart.bean.UserLogbean;
 import com.han.cityconnection.CityPart.HeardNews.LogResPart.bean.UsergetCodebean;
 import com.han.cityconnection.CityPart.HeardNews.LogResPart.entity.LogResPesnterImp;
-import com.han.cityconnection.CityPart.HeardNews.fragment.TouTiaoFragment;
-import com.han.cityconnection.R;
 import com.han.cityconnection.base.BaseActivity;
-import com.han.cityconnection.config.FragmentBuilder;
 import com.han.cityconnection.config.Parameter;
-import com.han.cityconnection.config.Urls;
-import com.han.cityconnection.view.fragment.ZhaoPinFragment;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 
