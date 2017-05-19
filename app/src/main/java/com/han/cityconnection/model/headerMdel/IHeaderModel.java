@@ -1,7 +1,5 @@
 package com.han.cityconnection.model.headerMdel;
 
-import com.han.cityconnection.model.http.NetWorkCallBack;
-
 import java.util.Map;
 
 /**
