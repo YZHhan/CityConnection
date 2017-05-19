@@ -3,10 +3,10 @@ package com.han.cityconnection;
 import android.view.View;
 import android.widget.RadioButton;
 
+import com.han.cityconnection.CityPart.HeardNews.SheQuPart.fragment.SheQuFragment;
 import com.han.cityconnection.base.BaseActivity;
 import com.han.cityconnection.view.fragment.FanChanFragment;
 import com.han.cityconnection.view.fragment.FoundFragment;
-import com.han.cityconnection.view.fragment.SheQuFragment;
 import com.han.cityconnection.CityPart.HeardNews.fragment.TouTiaoFragment;
 import com.han.cityconnection.view.fragment.ZhaoPinFragment;
 
@@ -20,22 +20,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private RadioButton zhaopinButton;
     private RadioButton fangchanButton;
     private RadioButton foundButton;
-
-//        String params4 = ReplyParams("15650714120");
-//        Log.d("abcabc1", params4);
-//        String params1 = "param="
-//                + params4.replace(
-//                "+6Hp9X5zR39SOI6oP0685Bk77gG56m7PkV89xYvl86A=",
-//                "%2b6Hp9X5zR39SOI6oP0685Bk77gG56m7PkV89xYvl86A=");
-////        Log.d("abcabc2", params1);
-//
-//
-//        String replyParams1 = ReplyParams1("15650714120", "620656");
-////        Log.d("abcabc3", replyParams1);
-//
-//        String replyParams = ReplyParams();
-////        Log.d("abc4", replyParams);
-
 
     @Override
     protected int getLayoutId() {
@@ -74,7 +58,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case R.id.main_toutiaoBtn:
                 FragmentBuilder.getInstance().start(TouTiaoFragment.class).build();
                 break;
-
             case R.id.main_shequBtn:
                 FragmentBuilder.getInstance().start(SheQuFragment.class).build();
                 break;
