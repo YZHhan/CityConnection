@@ -3,7 +3,6 @@ package com.han.cityconnection.config;
 import android.util.Log;
 
 import com.han.cityconnection.App;
-import com.han.cityconnection.utils.TimeData;
 
 import org.json.JSONObject;
 
