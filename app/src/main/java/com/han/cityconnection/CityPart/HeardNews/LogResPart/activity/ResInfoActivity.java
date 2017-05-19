@@ -15,6 +15,7 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.han.cityconnection.*;
 import com.han.cityconnection.CityPart.HeardNews.LogResPart.Contract.Contract;
 import com.han.cityconnection.CityPart.HeardNews.LogResPart.bean.ResBean;
 import com.han.cityconnection.CityPart.HeardNews.LogResPart.bean.UserInfoBean;
@@ -22,7 +23,6 @@ import com.han.cityconnection.CityPart.HeardNews.LogResPart.bean.UserLogbean;
 import com.han.cityconnection.CityPart.HeardNews.LogResPart.bean.UsergetCodebean;
 import com.han.cityconnection.CityPart.HeardNews.LogResPart.entity.LogResPesnterImp;
 import com.han.cityconnection.CityPart.HeardNews.fragment.TouTiaoFragment;
-import com.han.cityconnection.R;
 import com.han.cityconnection.config.FragmentBuilder;
 import com.han.cityconnection.config.Parameter;
 import com.han.cityconnection.config.Urls;
@@ -131,7 +131,7 @@ public class ResInfoActivity extends Activity implements View.OnClickListener, C
                 Map<String, String> map = new HashMap<>();
                 map.put("param", s);
                 logResPesnterImp.senduserinfo(Urls.APPURL, map);
-                FragmentBuilder.getInstance().start(TouTiaoFragment.class).build();
+                startActivity(new Intent(ResInfoActivity.this, com.han.cityconnection.MainActivity.class));
                 break;
         }
     }

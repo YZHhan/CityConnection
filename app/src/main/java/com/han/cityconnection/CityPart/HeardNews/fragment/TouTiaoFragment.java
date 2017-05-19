@@ -23,7 +23,6 @@ public class TouTiaoFragment extends BaseFragment {
     private ViewPagerBanner viewPagerBanner;
     private List<ImageView> list;
 
-
     private int[] imageID;
 
     @Override

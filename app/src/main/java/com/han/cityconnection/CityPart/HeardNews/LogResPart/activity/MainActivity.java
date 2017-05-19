@@ -53,8 +53,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,C
     private String pwd;
     private LogResPesnterImp logResPesnterImp;
 
-
-
     @Override
     protected int getLayoutId() {
         return R.layout.username_login;
@@ -72,8 +70,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,C
         imageView_share_login1 = (ImageView) findViewById(R.id.submit1);
         imageView_share_login2 = (ImageView) findViewById(R.id.submit2);
         imageView_share_login3 = (ImageView) findViewById(R.id.submit3);
-        imageView_share_login4 = (ImageView) findViewById(R.id.submit4);
         eyes = (ImageView) findViewById(R.id.eyes);
+        imageView_share_login4 = (ImageView) findViewById(R.id.submit4);
         uDel = (ImageView) findViewById(R.id.username_delete);
         pDel = (ImageView) findViewById(R.id.password_delete);
         imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -143,12 +141,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,C
                             InputMethodManager.HIDE_NOT_ALWAYS);
                     button_user_login.setText("登 录 中...");
                     String s = ReplyParams(name, pwd);
-                    Log.i("xinxin",s);
                     Map<String,String> map=new HashMap<>();
                     map.put("param",s);
                     logResPesnterImp.senduserlog(Urls.APPURL,map);
                     Toast.makeText(this, "登录成功", Toast.LENGTH_SHORT).show();
-                    FragmentBuilder.getInstance().start(TouTiaoFragment.class).build();
+                    startActivity(new Intent(MainActivity.this, com.han.cityconnection.MainActivity.class));
                 }
                 break;
             case R.id.textView_user_forget_pwd:
