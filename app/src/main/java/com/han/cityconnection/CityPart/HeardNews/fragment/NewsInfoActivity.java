@@ -10,7 +10,6 @@ import com.han.cityconnection.CityPart.HeardNews.Entity.CityNewsInfoBean;
 import com.han.cityconnection.CityPart.HeardNews.contract.HeaderNewContract;
 import com.han.cityconnection.R;
 import com.han.cityconnection.base.BaseActivity;
-import com.han.cityconnection.config.Parameter;
 import com.han.cityconnection.persenteer.header.HeaderParsenterImpl;
 
 import org.json.JSONException;

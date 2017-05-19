@@ -2,21 +2,15 @@ package com.han.cityconnection.CityPart.HeardNews.adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
 import com.han.cityconnection.App;
 import com.han.cityconnection.CityPart.HeardNews.Entity.BeiJingMsgList;
 import com.han.cityconnection.CityPart.HeardNews.fragment.NewsInfoActivity;
-import com.han.cityconnection.CityPart.HeardNews.fragment.NewsInfoFragment;
-import com.han.cityconnection.CityPart.HeardNews.viewholder.TouTiaoViewHolder;
 import com.han.cityconnection.R;
 import com.han.cityconnection.base.CommonAdapter;
 import com.han.cityconnection.base.ViewHolder;
-import com.han.cityconnection.config.FragmentBuilder;
 
 import java.util.List;
 
