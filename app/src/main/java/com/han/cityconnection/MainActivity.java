@@ -5,7 +5,6 @@ import android.widget.RadioButton;
 
 import com.han.cityconnection.base.BaseActivity;
 import com.han.cityconnection.config.FragmentBuilder;
-import com.han.cityconnection.config.Urls;
 import com.han.cityconnection.config.Parameter;
 import com.han.cityconnection.view.fragment.FanChanFragment;
 import com.han.cityconnection.view.fragment.FoundFragment;

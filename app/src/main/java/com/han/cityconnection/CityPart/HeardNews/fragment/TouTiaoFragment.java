@@ -1,7 +1,6 @@
 package com.han.cityconnection.CityPart.HeardNews.fragment;
 
 import android.support.v4.view.ViewPager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,10 +9,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.androidkun.PullToRefreshRecyclerView;
 import com.han.cityconnection.App;
 import com.han.cityconnection.CityPart.HeardNews.Entity.BeiJingMsgList;
-import com.han.cityconnection.CityPart.HeardNews.adapter.RecyclerViewAdapter;
 import com.han.cityconnection.CityPart.HeardNews.adapter.TouTiaoAdapter;
 import com.han.cityconnection.CityPart.HeardNews.adapter.TouTiaoAdapterOne;
 import com.han.cityconnection.config.Parameter;
@@ -22,12 +19,10 @@ import com.han.cityconnection.CityPart.HeardNews.adapter.ViewPagerBanner;
 import com.han.cityconnection.CityPart.HeardNews.contract.HeaderNewContract;
 import com.han.cityconnection.R;
 import com.han.cityconnection.base.BaseFragment;
-import com.han.cityconnection.config.Urls;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

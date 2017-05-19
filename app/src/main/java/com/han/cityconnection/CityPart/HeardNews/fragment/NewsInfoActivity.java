@@ -2,28 +2,20 @@ package com.han.cityconnection.CityPart.HeardNews.fragment;
 
 import android.content.Intent;
 import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.han.cityconnection.CityPart.HeardNews.Entity.BeiJingMsgList;
 import com.han.cityconnection.CityPart.HeardNews.Entity.CityNewsInfoBean;
 import com.han.cityconnection.CityPart.HeardNews.contract.HeaderNewContract;
 import com.han.cityconnection.R;
 import com.han.cityconnection.base.BaseActivity;
 import com.han.cityconnection.config.Parameter;
-import com.han.cityconnection.config.Urls;
-import com.han.cityconnection.model.http.NetWorkCallBack;
-import com.han.cityconnection.model.modelpart.headmodel.HeaderModelImpl;
 import com.han.cityconnection.persenteer.header.HeaderParsenterImpl;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.net.URL;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
