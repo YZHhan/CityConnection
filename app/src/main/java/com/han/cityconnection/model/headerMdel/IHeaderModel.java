@@ -1,5 +1,7 @@
 package com.han.cityconnection.model.headerMdel;
 
+import com.han.cityconnection.model.http.NetWorkCallBack;
+
 import java.util.Map;
 
 /**
@@ -8,4 +10,6 @@ import java.util.Map;
 
 public interface IHeaderModel {
     <T> void getHeaderData(String url, Map<String, String> map, NetWorkCallBack<T> callBack);
+    <T> void getaddgridData(String url, Map<String, String> map, NetWorkCallBack<T> callBack);
+
 }

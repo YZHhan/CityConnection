@@ -17,6 +17,7 @@ import com.han.cityconnection.CityPart.HeardNews.LogResPart.bean.UserInfoBean;
 import com.han.cityconnection.CityPart.HeardNews.LogResPart.bean.UserLogbean;
 import com.han.cityconnection.CityPart.HeardNews.LogResPart.bean.UsergetCodebean;
 import com.han.cityconnection.CityPart.HeardNews.LogResPart.entity.LogResPesnterImp;
+import com.han.cityconnection.R;
 import com.han.cityconnection.config.Parameter;
 import com.han.cityconnection.config.Urls;
 

@@ -2,7 +2,10 @@ package com.han.cityconnection.persenteer.header;
 
 import com.han.cityconnection.CityPart.HeardNews.Entity.BeiJingMsgList;
 import com.han.cityconnection.CityPart.HeardNews.Entity.CityNewsInfoBean;
+import com.han.cityconnection.CityPart.HeardNews.Entity.MainAddbean;
 import com.han.cityconnection.CityPart.HeardNews.fragment.NewsInfoActivity;
+import com.han.cityconnection.MainActivity;
+import com.han.cityconnection.model.http.NetWorkCallBack;
 import com.han.cityconnection.model.modelpart.headmodel.HeaderModelImpl;
 import com.han.cityconnection.CityPart.HeardNews.contract.HeaderNewContract;
 import com.han.cityconnection.CityPart.HeardNews.fragment.TouTiaoFragment;
@@ -18,7 +21,7 @@ public class HeaderParsenterImpl implements HeaderNewContract.HeaderPresenter {
     private TouTiaoFragment touTiaoFragment;
     private HeaderModelImpl headerModel;
     private NewsInfoActivity newsInfoActivity;
-
+    private MainActivity mainActivity;
     public HeaderParsenterImpl(BaseView baseView) {
         super();
         this.headerModel=new HeaderModelImpl();
@@ -26,9 +29,9 @@ public class HeaderParsenterImpl implements HeaderNewContract.HeaderPresenter {
             this.touTiaoFragment= (TouTiaoFragment) baseView;
         }else if(baseView instanceof HeaderNewContract.HeaderNewsView){
             this.newsInfoActivity= (NewsInfoActivity) baseView;
+        }else if(baseView instanceof MainActivity){
+            this.mainActivity= (MainActivity) baseView;
         }
-
-
     }
 
     @Override
@@ -52,6 +55,21 @@ public class HeaderParsenterImpl implements HeaderNewContract.HeaderPresenter {
             @Override
             public void onSuccess(CityNewsInfoBean data) {
                     newsInfoActivity.setData(data);
+            }
+
+            @Override
+            public void onError(String errorMsg) {
+
+            }
+        });
+    }
+
+    @Override
+    public void loadgriddata(String url, Map<String, String> params) {
+        headerModel.getaddgridData(url, params, new NetWorkCallBack<MainAddbean>() {
+            @Override
+            public void onSuccess(MainAddbean data) {
+                mainActivity.getgrid(data);
             }
 
             @Override

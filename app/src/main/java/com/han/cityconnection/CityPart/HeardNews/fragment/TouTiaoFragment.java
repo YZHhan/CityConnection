@@ -13,6 +13,8 @@ import com.han.cityconnection.App;
 import com.han.cityconnection.CityPart.HeardNews.Entity.BeiJingMsgList;
 import com.han.cityconnection.CityPart.HeardNews.adapter.TouTiaoAdapter;
 import com.han.cityconnection.CityPart.HeardNews.adapter.TouTiaoAdapterOne;
+import com.han.cityconnection.config.Parameter;
+import com.han.cityconnection.config.Urls;
 import com.han.cityconnection.persenteer.header.HeaderParsenterImpl;
 import com.han.cityconnection.CityPart.HeardNews.adapter.ViewPagerBanner;
 import com.han.cityconnection.CityPart.HeardNews.contract.HeaderNewContract;

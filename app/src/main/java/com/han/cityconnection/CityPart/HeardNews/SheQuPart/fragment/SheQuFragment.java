@@ -37,6 +37,11 @@ public class SheQuFragment extends BaseFragment implements SheQuContract.SheQuvi
     }
 
     @Override
+    protected void sendQuest() {
+
+    }
+
+    @Override
     protected void initView(View view) {
        // inflateview = LayoutInflater.from(getContext()).inflate(R.layout.shequfragment, null);
         list=new ArrayList<>();

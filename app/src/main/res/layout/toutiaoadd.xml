@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -10,14 +10,31 @@
         android:id="@+id/link_page_banner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
-        android:layout_marginTop="90dp"
         android:gravity="center"
         android:src="@drawable/link_page_banner"
         />
-    <com.han.cityconnection.CityPart.HeardNews.fragment.MyGridView
-        android:id="@+id/link_page_gridview"
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:numColumns="3"
+        android:verticalSpacing="5dp"
+        android:id="@+id/mygridview"
+        android:layout_below="@+id/link_page_banner"
+        >
+    </GridView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bottomimage"
+        android:background="#BFffffff"
+        android:layout_below="@id/mygridview"
+        />
+    <!--<com.han.cityconnection.CityPart.HeardNews.fragment.MyGridView
+        android:id="@+id/mygridview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
@@ -29,6 +46,5 @@
         android:scrollbars="none"
         android:verticalSpacing="5dp"
         >
-
-    </com.han.cityconnection.CityPart.HeardNews.fragment.MyGridView>
-</LinearLayout>
+    </com.han.cityconnection.CityPart.HeardNews.fragment.MyGridView>-->
+</RelativeLayout>

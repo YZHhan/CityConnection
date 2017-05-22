@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_titlebar3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        />
+
+    <!--<include
+        android:id="@+id/bottom_layout"
+        layout="@layout/reply_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />-->
+
+    <ScrollView
+        android:id="@+id/mainSV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/title_layout"
+        android:layout_below="@+id/title_layout"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical" />
+
+            <com.www.ccoocity.widget.MyEditText
+                android:id="@+id/content_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:maxHeight="300dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/usermain_guanzhu_shape1"
+                android:gravity="top"
+                android:hint="此刻的想法~"
+                android:maxLength="5000"
+                android:padding="10dp"
+                android:textColor="@color/color_333"
+                android:textColorHint="@color/color_ccc"
+                android:textSize="16dp" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/gray_bg"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="#热门话题"
+                    android:textSize="16dp"
+                    android:textColor="@color/color_333"/>
+                <TextView
+                    android:id="@+id/more_huati_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:text="更多话题 "
+                    android:textSize="14dp"
+                    android:textColor="@color/color_999"/>
+            </FrameLayout>
+            <com.zhy.view.flowlayout.TagFlowLayout
+                android:id="@+id/flow_layout"
+                app:max_select="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/guide_relay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#70000000"
+        android:visibility="gone"
+        android:clickable="true">
+        <ImageView
+            android:id="@+id/guide_image1_video"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="62dp"
+            android:visibility="gone"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:id="@+id/guide_image1"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="67dp"
+            android:visibility="gone"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/guide_image2"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

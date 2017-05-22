@@ -22,4 +22,5 @@
     <color name="login_edit_text">#ff4200</color>
     <color name="login_edit_line">#ff9900</color>
     <color name="login_edit_hint">#f1866f</color>
+    <color name="all_top_bg">#f03732</color>
 </resources>
