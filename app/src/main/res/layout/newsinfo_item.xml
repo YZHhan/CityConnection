@@ -5,28 +5,28 @@
     android:orientation="vertical">
 
     <include
-        android:id="@+id/newsInfo_title"
+        android:id="@+id/newsInfo_title_biaoti"
         layout="@layout/news_top_title" />
 
     <ListView
         android:id="@+id/newsInfo_listView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/newsInfo_title"
+        android:layout_below="@id/newsInfo_title_biaoti"
         android:background="@color/gray_bg"
         android:cacheColorHint="#00000000"
         android:divider="@color/transparent"
         android:dividerHeight="0dip"
         android:fadingEdge="none"
-        android:listSelector="#00000000"
-        >
-    </ListView>
+        android:listSelector="#00000000"></ListView>
+
     <View
         android:id="@+id/bottom_view"
         android:layout_width="fill_parent"
         android:layout_height="0.5dp"
         android:layout_above="@+id/newsInfo_title"
         android:background="@color/line" />
+
     <LinearLayout
         android:id="@+id/bottom_layout"
         android:layout_width="match_parent"
@@ -137,19 +137,4 @@
             android:contentDescription="@string/desc"
             android:scaleType="fitCenter" />
     </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-        <include
-            layout="@layout/newsinfo_footitem"
-            android:layout_width="wrap_content"
-            android:layout_height="500dp" />
-
 </RelativeLayout>

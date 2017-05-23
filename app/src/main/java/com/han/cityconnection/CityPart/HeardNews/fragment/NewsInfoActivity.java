@@ -1,9 +1,11 @@
 package com.han.cityconnection.CityPart.HeardNews.fragment;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.util.Log;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.han.cityconnection.CityPart.HeardNews.Entity.CityNewsInfoBean;
@@ -37,6 +39,8 @@ public class NewsInfoActivity extends BaseActivity implements HeaderNewContract.
     private TextView showTimeText;
     private WebView webView;
     private Set<WebView> wvList = new HashSet<>();
+    //加载  ListView
+    private ListView newsListView;
 
     @Override
     protected int getLayoutId() {
@@ -45,6 +49,8 @@ public class NewsInfoActivity extends BaseActivity implements HeaderNewContract.
 
     @Override
     protected void init() {
+        newsListView= (ListView) findViewById(R.id.newsInfo_listView);
+
         Intent intent = getIntent();
         newsId = intent.getIntExtra("newsId",0);
         headerParsenter = new HeaderParsenterImpl(this);
