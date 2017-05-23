@@ -11,5 +11,6 @@ import java.util.Map;
 public interface IHeaderModel {
     <T> void getHeaderData(String url, Map<String, String> map, NetWorkCallBack<T> callBack);
     <T> void getaddgridData(String url, Map<String, String> map, NetWorkCallBack<T> callBack);
+    <T> void getfabudData(String url, Map<String, String> map, NetWorkCallBack<T> callBack);
 
 }

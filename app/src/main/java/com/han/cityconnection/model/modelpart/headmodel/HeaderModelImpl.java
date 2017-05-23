@@ -27,4 +27,10 @@ public class HeaderModelImpl implements IHeaderModel {
     public <T> void getaddgridData(String url, Map<String, String> map, NetWorkCallBack<T> callBack) {
         volleyHttp.post(url,map,callBack);
     }
+
+    @Override
+    public <T> void getfabudData(String url, Map<String, String> map, NetWorkCallBack<T> callBack) {
+        volleyHttp.post(url,map,callBack);
+    }
+
 }

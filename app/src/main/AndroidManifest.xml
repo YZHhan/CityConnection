@@ -19,9 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".CityPart.HeardNews.fragment.imageloader.ImgFileListActivity"/>
+        <activity android:name=".CityPart.HeardNews.fragment.imageloader.ImgsActivity"/>
         <activity android:name=".CityPart.HeardNews.LogResPart.activity.DuanxinLogin" />
-        <activity android:name=".CityPart.HeardNews.fragment.iamgeload.ImageActivity"/>
-        <activity android:name=".CityPart.HeardNews.fragment.iamgeload.ShowImageActivity"/>
         <activity android:name=".CityPart.HeardNews.LogResPart.activity.FindPasswrad" />
         <activity android:name=".CityPart.HeardNews.LogResPart.activity.QuickRegister" />
         <activity android:name=".CityPart.HeardNews.LogResPart.activity.SetPassword" />

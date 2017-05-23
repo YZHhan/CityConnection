@@ -3,6 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
+    android {compileOptions.encoding = "GBK"}
     defaultConfig {
         applicationId "com.han.cityconnection"
         minSdkVersion 16

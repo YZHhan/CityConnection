@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
-    <file url="PROJECT" charset="UTF-8" />
+  <component name="Encoding" defaultCharsetForPropertiesFiles="GBK">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/han/cityconnection/CityPart/HeardNews/fragment/TouTiaoFragment.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/han/cityconnection/CityPart/HeardNews/fragment/imageloader/FileTraversal.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/han/cityconnection/CityPart/HeardNews/fragment/imageloader/ImgFileListActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/han/cityconnection/CityPart/HeardNews/fragment/imageloader/ImgFileListAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/han/cityconnection/CityPart/HeardNews/fragment/imageloader/ImgsActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/han/cityconnection/CityPart/HeardNews/fragment/imageloader/Util.java" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
   </component>
 </project>

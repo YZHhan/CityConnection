@@ -3,7 +3,9 @@ package com.han.cityconnection.persenteer.header;
 import com.han.cityconnection.CityPart.HeardNews.Entity.BeiJingMsgList;
 import com.han.cityconnection.CityPart.HeardNews.Entity.CityNewsInfoBean;
 import com.han.cityconnection.CityPart.HeardNews.Entity.MainAddbean;
+import com.han.cityconnection.CityPart.HeardNews.Entity.Photobean;
 import com.han.cityconnection.CityPart.HeardNews.fragment.NewsInfoActivity;
+import com.han.cityconnection.CityPart.HeardNews.fragment.imageloader.ImgsActivity;
 import com.han.cityconnection.MainActivity;
 import com.han.cityconnection.model.http.NetWorkCallBack;
 import com.han.cityconnection.model.modelpart.headmodel.HeaderModelImpl;
@@ -22,6 +24,7 @@ public class HeaderParsenterImpl implements HeaderNewContract.HeaderPresenter {
     private HeaderModelImpl headerModel;
     private NewsInfoActivity newsInfoActivity;
     private MainActivity mainActivity;
+    private ImgsActivity imgsActivity;
     public HeaderParsenterImpl(BaseView baseView) {
         super();
         this.headerModel=new HeaderModelImpl();
@@ -31,6 +34,8 @@ public class HeaderParsenterImpl implements HeaderNewContract.HeaderPresenter {
             this.newsInfoActivity= (NewsInfoActivity) baseView;
         }else if(baseView instanceof MainActivity){
             this.mainActivity= (MainActivity) baseView;
+        }else if(baseView instanceof ImgsActivity){
+            this.imgsActivity= (ImgsActivity) baseView;
         }
     }
 
@@ -78,4 +83,20 @@ public class HeaderParsenterImpl implements HeaderNewContract.HeaderPresenter {
             }
         });
     }
+
+    @Override
+    public void fabuphootos(String url, Map<String, String> params) {
+        headerModel.getfabudData(url, params, new NetWorkCallBack<Photobean>() {
+            @Override
+            public void onSuccess(Photobean data) {
+                imgsActivity.fabuphoto(data);
+            }
+
+            @Override
+            public void onError(String errorMsg) {
+
+            }
+        });
+    }
+
 }

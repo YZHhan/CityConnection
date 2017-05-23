@@ -1,7 +1,6 @@
 package com.han.cityconnection;
 
 import android.content.Intent;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,13 +18,11 @@ import android.widget.PopupWindow;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-import com.han.cityconnection.CityPart.HeardNews.Entity.CityNewsInfoBean;
 import com.han.cityconnection.CityPart.HeardNews.Entity.MainAddbean;
 import com.han.cityconnection.CityPart.HeardNews.SheQuPart.fragment.SheQuFragment;
 import com.han.cityconnection.CityPart.HeardNews.adapter.Adddapter;
 import com.han.cityconnection.CityPart.HeardNews.contract.HeaderNewContract;
-import com.han.cityconnection.CityPart.HeardNews.fragment.PhotosActivity;
-import com.han.cityconnection.CityPart.HeardNews.fragment.iamgeload.ImageActivity;
+import com.han.cityconnection.CityPart.HeardNews.fragment.imageloader.ImgFileListActivity;
 import com.han.cityconnection.base.BaseActivity;
 import com.han.cityconnection.config.FragmentBuilder;
 import com.han.cityconnection.config.Parameter;
@@ -96,7 +93,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,H
                         Toast.makeText(MainActivity.this, "0000", Toast.LENGTH_SHORT).show();
                         break;
                     case 1:
-                        startActivity(new Intent(MainActivity.this,ImageActivity.class));
+                        startActivity(new Intent(MainActivity.this,ImgFileListActivity.class));
                         Toast.makeText(MainActivity.this, "1111", Toast.LENGTH_SHORT).show();
                         break;
                     case 2:

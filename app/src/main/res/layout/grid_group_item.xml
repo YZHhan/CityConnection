@@ -39,6 +39,7 @@
         android:ellipsize="end"
         android:singleLine="true"
         android:text="Camera"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        />
 
 </RelativeLayout>

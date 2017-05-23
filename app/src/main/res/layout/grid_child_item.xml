@@ -10,7 +10,7 @@
         <com.han.cityconnection.CityPart.HeardNews.fragment.iamgeload.MyImageView
             android:id="@+id/child_image"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="100dp"
             android:background="@drawable/friends_sends_pictures_no"
             android:scaleType="fitXY" />
         <CheckBox
@@ -22,14 +22,5 @@
             />
     </RelativeLayout>
 
-        <TextView
-            android:background="#Ff8800"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:textSize="20sp"
-            android:text="完 成"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/wancheng"
-            />
+
 </RelativeLayout>
