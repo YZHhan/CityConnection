@@ -1,6 +1,10 @@
 package com.han.cityconnection;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -70,6 +74,16 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,H
 
     @Override
     protected void init() {
+        //添加动态授权
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED ||
+                ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
+                ) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_PHONE_STATE, Manifest.permission.WRITE_EXTERNAL_STORAGE}, 0);
+
+        }
+
+
+
         FragmentBuilder.getInstance().start(TouTiaoFragment.class).build();
         conview = LayoutInflater.from(this).inflate(R.layout.toutiaoadd,null);
         toutioButton = (RadioButton) findViewById(R.id.main_toutiaoBtn);

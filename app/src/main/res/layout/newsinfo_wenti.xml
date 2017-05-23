@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/newsInfo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="14dp"
+            android:lineSpacingExtra="5dp"
+            android:maxLines="2"
+            android:text="广西柳州官方否认落水市长被查广西柳州官方否认落水市长被查"
+            android:textColor="@color/color_333"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:id="@+id/newsInfo_cityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/head_image"
+                android:text="衡水在线"
+                android:textColor="#30629c"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/newsInfo_showTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/newsInfo_cityName"
+                android:text="2015-11-11 7:34"
+                android:textColor="@color/color_ccc"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/read_image"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/newsInfo_browse"
+                android:src="@drawable/ccoo_icon_look2" />
+
+            <TextView
+                android:id="@+id/newsInfo_browse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="12345"
+                android:textColor="@color/color_ccc"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line" />
+
+        <View
+            android:id="@+id/more_view"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/line" />
+
+    </LinearLayout>
+</LinearLayout>
